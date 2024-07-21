@@ -44,3 +44,9 @@ Cake Crafters is an E-commerce application that allows users to browse, order, a
 - Node.js
 - MySQL
 - Razorpay Account
+
+## UI
+- Home Page
+  [HomePage](images/Homepage.jpeg)
+  ![image](https://github.com/user-attachments/assets/3796cee1-59ea-467d-8917-e4e22ca347f8)
+
