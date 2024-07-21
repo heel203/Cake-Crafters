@@ -1,0 +1,726 @@
+    /* ========= POPPINS ============ */
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+    /* ========== NUINTO ============ */
+    @import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&display=swap');
+
+    @import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Dancing+Script:wght@400..700&display=swap');
+
+    @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css');
+
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        scroll-behavior: smooth;
+        font-family: 'Poppins', sans-serif;
+        /* Use Poppins font */
+        list-style: none;
+    }
+
+    :root {
+        --white: #ffffff;
+        /* White color */
+        --pink: #A43664;
+        /* Pink color */
+    }
+
+    .text-white {
+        color: var(--white);
+        /* White text color */
+        letter-spacing: 1.1px;
+    }
+
+    .text-pink {
+        color: var(--pink);
+        /* Pink text color */
+        letter-spacing: 1.1px;
+    }
+
+    .bg-white {
+        background-color: var(--white);
+        /* White background color */
+    }
+
+    .bg-pink {
+        background-color: var(--pink);
+        /* Pink background color */
+    }
+    .bg-beige{
+        background-color: #F4F4F2;
+    }
+
+    .font-weight {
+        font-weight: bold;
+    }
+
+    .font-weight-500 {
+        font-weight: 500;
+    }
+
+    .font-weight-300 {
+        font-weight: 300;
+    }
+    .font-cursive{
+        font-family: 'Dancing Script', cursive;
+        font-size: 5rem;
+    }
+    .card-href {
+        color: var(--white);
+        /* White color for links */
+        text-decoration: none;
+    }
+
+    .card-href:hover {
+        text-decoration: none;
+        color: var(--pink);
+        /* Pink color for links on hover */
+    }
+
+    /* NAVBAR */
+    .navbar {
+        background-color: var(--white);
+        /* White background */
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        /* Subtle box shadow */
+    }
+
+    .navbar-brand {
+        font-family: 'Cursive', sans-serif;
+        /* Use a playful cursive font for the brand */
+        font-size: 24px;
+        color: var(--pink);
+        /* Pink color for the brand */
+    }
+
+    .navbar-nav .nav-link {
+        color: var(--pink);
+        /* Pink text color */
+        font-weight: 300;
+        transition: color 0.3s ease;
+        /* Smooth transition */
+        text-decoration: none;
+        /* Remove underline by default */
+        margin-right: 10px;
+    }
+
+    .navbar-nav .nav-link:hover {
+        text-decoration: underline;
+        /* Add underline on hover */
+    }
+
+    .nav-icon {
+        color: var(--pink);
+        /* Pink color for icons */
+        font-size: 24px;
+        /* Adjust icon size */
+    }
+
+    /* Cart Badge */
+    .navbar-nav .nav-link .badge {
+        background-color: var(--pink);
+        /* Pink background color */
+        color: var(--white);
+        /* White text color */
+    }
+
+    /* Responsive Design */
+    @media (max-width: 768px) {
+        .navbar-nav {
+            padding-top: 10px;
+            /* Adjust spacing for small screens */
+        }
+    }
+
+    /* General Styling */
+
+    /*SignUp & Login Styling Start*/
+
+    /* Adjustments based on provided CSS */
+
+    /* Ensure Poppins font is used */
+    body,
+    .form-label,
+    .form-control,
+    .btn {
+        font-family: 'Poppins', sans-serif;
+    }
+
+    /* Background settings for the body */
+    .admin-body {
+        background-size: cover;
+        background-position: center;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    /* Centering the form */
+    .login-box {
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    /* Styling for the form card */
+    .login-form {
+        background-color: var(--white);
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        padding: 20px;
+        width: 100%;
+        max-width: 400px;
+    }
+
+    /* Icon styling */
+    .admin-icon {
+        font-size: 50px;
+        color: #333;
+    }
+
+    /* Heading styling */
+    .admin-heading h2 {
+        margin-bottom: 20px;
+        color: var(--pink);
+    }
+
+    /* Form label styling */
+    .form-label {
+        font-weight: bold;
+        color: var(--pink);
+    }
+
+    /* Input field styling */
+    .form-input {
+        border-radius: 5px;
+        padding: 10px;
+        margin-bottom: 10px;
+    }
+
+    /* Button styling */
+    .login-btn {
+        border-radius: 5px;
+    }
+
+    .b1{
+        background-color: var(--pink);
+        border-color: var(--pink);
+    }
+
+    .b1:hover {
+        background-color: #87244a;
+        border-color: #87244a;
+    }
+
+    /* Ensure error messages are styled */
+    #error-username-msg,
+    #error-password-msg,
+    #error-confirm-password-msg {
+        color: #ff4d4d;
+        font-size: 0.875rem;
+    }
+
+    /*SignUp & Login Styling end*/
+
+    /* LANDING PAGE START */
+
+    .landing-page {
+        width: 100%;
+        height: 700px;
+        background-color: var(--pink);
+        /* Pink background color */
+    }
+
+    /* LANDING PAGE END*/
+
+    /* Hero Section start */
+    .hero-section {
+        background-color: #F4F4F2;
+        padding: 2rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 80vh;
+        box-sizing: border-box;
+    }
+
+    .hero-text {
+        max-width: 50%;
+    }
+
+    .hero-title {
+        font-family: 'Dancing Script', cursive;
+        font-size: 4rem;
+        color: #A43664;
+        margin: 0;
+    }
+
+    .hero-subtitle {
+        font-family: 'Arial', sans-serif;
+        font-size: 2.5rem;
+        color: #333;
+        margin: 0.5rem 0;
+    }
+
+    .hero-description {
+        font-family: 'Arial', sans-serif;
+        font-size: 1.25rem;
+        color: #777;
+        margin-bottom: 2rem;
+    }
+
+    .shop-now-btn {
+        padding: 0.75rem 2rem;
+        font-size: 1.25rem;
+        background-color: #A43664;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+
+    .shop-now-btn:hover {
+        background-color: #87244a;
+    }
+
+    .hero-image-container {
+        max-width: 50%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .hero-image {
+        max-width: 100%;
+        height: auto;
+        border-radius: 10px;
+    }
+
+
+
+    /*Hero Section end */
+
+    /*Online cake Delivery Section START*/
+
+    .online-cake-delivery {
+        padding: 50px 0;
+        /* Add padding to create space around the section */
+        background-color: #F8F8F8;
+        /* Light gray background color */
+    }
+
+    .cake-card {
+        border-radius: 10px;
+        overflow: hidden;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        /* Soft shadow */
+        transition: box-shadow 0.3s ease;
+        /* Smooth transition */
+    }
+
+    .cake-card:hover {
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+        /* Increase shadow on hover */
+    }
+
+    .cake-card-image {
+        width: 100%;
+        height: auto;
+    }
+
+    .cake-card-content {
+        padding: 20px;
+        /* Add padding to the card content */
+    }
+
+    .cake-title {
+        font-size: 20px;
+        font-weight: 500;
+        color: #333;
+        /* Dark text color */
+        margin-bottom: 10px;
+    }
+
+    .cake-description {
+        font-size: 16px;
+        color: #666;
+        /* Medium dark text color */
+        margin-bottom: 15px;
+    }
+
+    .order-now-btn {
+        display: inline-block;
+        padding: 10px 20px;
+        background-color: #A43664;
+        /* Pink button color */
+        color: #fff;
+        /* White button text color */
+        font-size: 18px;
+        font-weight: 300;
+        text-transform: uppercase;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+
+    .order-now-btn:hover {
+        background-color: #87244a;
+        /* Darker pink button color on hover */
+    }
+
+    /* Responsive Design */
+    @media (max-width: 768px) {
+        .cake-card {
+            margin-bottom: 30px;
+            /* Add margin for better spacing on small screens */
+        }
+    }
+
+    /*Online cake Delivery Section END*/
+
+    /* CUSTOMER REVIEW SECTION */
+
+    .customer-review {
+        border: 1px solid #ccc;
+        border-radius: 10px;
+        padding: 20px;
+        margin-bottom: 20px;
+        background-color: #fff;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        transition: box-shadow 0.3s ease;
+    }
+
+    .customer-review:hover {
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    }
+
+    .customer-review-text {
+        font-size: 16px;
+        color: #333;
+        margin-bottom: 10px;
+        font-style: italic;
+    }
+
+    .customer-name {
+        font-size: 14px;
+        color: #666;
+        text-align: right;
+    }
+
+    .text-pink {
+        color: #A43664;
+    }
+
+    .font-weight {
+        font-weight: bold;
+    }
+
+    /* RESPONSIVE DESIGN */
+    @media (max-width: 768px) {
+        .customer-review {
+            margin-bottom: 30px;
+            /* Adjust margin for better spacing on small screens */
+        }
+    }
+
+    /* index.css */
+
+    /* Special Offers */
+    /* index.css */
+
+    .special-offers-container {
+        margin-top: 50px;
+    }
+
+    .special-offers-title {
+        text-align: center;
+        font-size: 2.5rem;
+        color: #A43664;
+        font-weight: 500;
+        margin-bottom: 40px;
+    }
+
+    .special-offers-card {
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        transition: box-shadow 0.3s ease;
+        background-color: #fff;
+    }
+
+    .special-offers-card:hover {
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    }
+
+    .special-card-title {
+        font-size: 1.5rem;
+        color: #333;
+        font-weight: 500;
+        margin-bottom: 10px;
+    }
+
+    .special-card-text {
+        font-size: 1rem;
+        color: #666;
+    }
+
+    .special-offers-card .card-body {
+        padding: 20px;
+    }
+
+    @media (max-width: 768px) {
+        .special-offers-title {
+            font-size: 2rem;
+        }
+
+        .-special-card-title {
+            font-size: 1.25rem;
+        }
+
+        .special-card-text {
+            font-size: 0.9rem;
+        }
+    }
+
+    /* EXCLUSIVE SECTION START */
+    .speciality-products {
+        background-color: #F4F4F2;
+    }
+
+    .border-radius {
+        border-radius: 4px;
+    }
+
+    .card:hover {
+        box-shadow: 0 .2rem 0.6rem rgba(0, 0, 0, 0.3);
+        transition: all .3s;
+    }
+
+    .card-border-radius {
+        border-radius: 12px;
+        box-shadow: 0 .2rem 0.6rem rgba(0, 0, 0, .1);
+    }
+
+    .card-shadow {
+        box-shadow: 0 .2rem 0.6rem rgba(0, 0, 0, .1);
+    }
+
+    .payment-href {
+        color: var(--white);
+        text-decoration: none;
+    }
+
+    .payment-href:hover {
+        color: var(--white);
+        text-decoration: none;
+    }
+
+    /* EXCLUSIVE SECTION END */
+
+    /* GALLERY START */
+
+    .card-content-overlay {
+        opacity: 0;
+        transition: all 0.5s;
+    }
+
+    .card-content-overlay:hover {
+        opacity: 1;
+    }
+
+    /* GALLERY END */
+
+    /* REVIEW START */
+
+
+    .section {
+        position: relative;
+        width: 100%;
+        min-height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: var(--white);
+        /* White background color */
+        overflow: hidden;
+    }
+
+    swiper-container {
+        width: 100%;
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+
+    swiper-slide {
+        background-position: center;
+        background-size: cover;
+        width: 300px;
+        height: 300px;
+    }
+
+    .swiper-card {
+        filter: blur(2px);
+        box-shadow: 0 15px 50px rgba(0, 0, 0, .2);
+    }
+
+    .swiper-slide-active .swiper-card {
+        filter: blur(0px);
+    }
+
+
+    /* REVIEW END */
+
+
+    /* CONTACT FORM STYLES */
+    /* Remove the rotation property from shadow and footer classes */
+    .contact-page .banner {
+        width: 100%;
+        height: 500px;
+        /* Adjust the height as needed */
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .contact-page .banner img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+    }
+
+    .contact-form-container {
+        background-color: #f8f8f8;
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+    }
+
+    .font-weight-bold {
+        font-weight: 500;
+    }
+
+    .font-weight-light {
+        font-weight: 300;
+    }
+
+    .bg-light {
+        background-color: #ffffff;
+    }
+
+    .form-control {
+        border-radius: 0.25rem;
+    }
+
+    .btn-block {
+        display: block;
+        width: 100%;
+    }
+
+    .img-fluid {
+        border-radius: 0.5rem;
+    }
+
+    .form-status {
+        font-size: 1rem;
+        color: #D81B60;
+    }
+
+    /* Additional styles for better form appearance */
+    .form-group {
+        margin-bottom: 1rem;
+    }
+
+    .shop-now-btn {
+        padding: 0.75rem 2rem;
+        font-size: 1.25rem;
+        background-color: #A43664;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+
+    .shop-now-btn:hover {
+        background-color: #87244a;
+    }
+
+    .contact-form-container h1,
+    .contact-form-container h4 {
+        margin-bottom: 1rem;
+    }
+
+    /* FOOTER START */
+
+    .shadow {
+        box-shadow: 2px solid black;
+        filter: drop-shadow(12px solid black);
+        border-bottom-left-radius: 30px;
+        border-bottom-right-radius: 30px;
+    }
+
+    .footer {
+        border-top-left-radius: 30px;
+        border-top-right-radius: 30px;
+        background-color: var(--white);
+        /* White background color */
+        color: var(--pink);
+        /* Pink text color */
+    }
+
+    .footer-heading {
+        font-size: 45px;
+        text-align: center;
+    }
+
+    .footer-link {
+        text-decoration: none;
+        color: var(--pink);
+        /* Pink color for links */
+        font-size: 18px;
+    }
+
+    .footer-line {
+        background-color: var(--pink);
+        /* Pink color for footer line */
+        width: 100%;
+        height: 0.8px;
+    }
+
+    .copyright-name {
+        color: var(--pink);
+        /* Pink color for copyright */
+        font-size: 16px;
+    }
+
+    .footer-icon-link {
+        text-decoration: none;
+        color: var(--pink);
+        /* Pink color for footer icons */
+    }
+
+    .footer-icon {
+        font-size: 30px;
+        margin-left: 15px;
+    }
+
+    .footer-icon:hover {
+        transform: translateY(-8px);
+        color: var(--pink);
+        /* Pink color for footer icons on hover */
+        transition: 0.4s;
+    }
+
+    .footer-link {
+        text-decoration: none;
+    }
+
+    .footer-link:hover {
+        color: var(--pink);
+        /* Pink color for links on hover */
+        text-decoration: none;
+    }
+
+    /* FOOTER END */
