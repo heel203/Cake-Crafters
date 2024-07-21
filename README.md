@@ -47,21 +47,33 @@ Cake Crafters is an E-commerce application that allows users to browse, order, a
 
 ## UI
 - Home
+  
   ![image](https://github.com/user-attachments/assets/3796cee1-59ea-467d-8917-e4e22ca347f8)
   ![image](https://github.com/user-attachments/assets/f781271f-e77c-477a-9e27-ac0e25545397)
+  
 - Products
+  
   ![image](https://github.com/user-attachments/assets/782ec605-b234-4d47-b680-5a298e57f043)
   ![image](https://github.com/user-attachments/assets/431c262a-20cb-4b4e-b541-3fa30955da01)
+  
 - ContactUs
+  
   ![image](https://github.com/user-attachments/assets/f00aeb48-0d80-4a50-b36a-b82f9bf860ec)
+  
 - Orders Page
+  
   ![image](https://github.com/user-attachments/assets/caad4e38-8f18-4555-8b6d-34cc75ba05e9)
+  
 - Cart
+  
   ![image](https://github.com/user-attachments/assets/f05401cb-c85a-4614-b27f-29dd73cbefc5)
+  
 - Place Order
   ![image](https://github.com/user-attachments/assets/06658b41-be7b-4fa5-bf7d-311bb93852e5)
+  
 - Razorpay
   ![image](https://github.com/user-attachments/assets/5a316c42-f53f-4b75-b46d-5fee5fd4fc89)
+
 - After Order placed
 - ![image](https://github.com/user-attachments/assets/5a735fb2-7500-4224-a9fb-94eb65aafecb)
 
